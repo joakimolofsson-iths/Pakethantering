@@ -1,10 +1,13 @@
-﻿namespace Pakethantering
+﻿using ClassLibrary;
+
+namespace Pakethantering
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var greeter = new Greeter();
+            Console.WriteLine(greeter.SayHello());
         }
     }
 }
